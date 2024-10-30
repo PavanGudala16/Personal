@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Prameela!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #ff66b2, #ff85b7, #ffc2d1, #ffb3c1, #ff758f);
+      background-size: 300% 300%;
+      animation: gradientAnimation 15s ease infinite;
+      overflow-y: auto;
+    }
+    
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Main Content */
+    .content {
+      text-align: center;
+      color: #7a003d;
+      padding: 30px;
+      max-width: 750px;
+      background: rgba(255, 203, 219, 0.9);
+      border: 3px solid #ff4081;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(255, 64, 129, 0.5);
+      animation: fadeIn 2s ease-out, scaleUp 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes scaleUp {
+      0% { transform: scale(0.9); }
+      100% { transform: scale(1); }
+    }
+
+    /* Title */
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5em;
+      color: #ff4081;
+      margin-bottom: 20px;
+      text-shadow: 3px 3px 8px rgba(255, 105, 180, 0.8);
+      animation: bounce 3s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* Message */
+    p {
+      font-size: 1.4em;
+      line-height: 1.6em;
+      color: #7a003d;
+      text-shadow: 1px 1px 4px rgba(255, 182, 193, 0.8);
+      margin: 0 15px;
+    }
+    
+    /* Button */
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 30px;
+      color: #fff;
+      background-color: #ff4081;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.2em;
+      border-radius: 25px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(255, 64, 129, 0.6);
+      transition: background-color 0.3s, transform 0.3s;
+      animation: pulse 2s infinite;
+    }
+
+    .button:hover {
+      background-color: #ff6699;
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    /* Floating Hearts */
+    .floating-hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -10px;
+      font-size: 1.5em;
+      color: rgba(255, 105, 180, 0.6);
+      animation: floatUp 7s infinite ease-in;
+    }
+
+    .heart:nth-child(1) { left: 20%; font-size: 2em; animation-duration: 6s; }
+    .heart:nth-child(2) { left: 35%; font-size: 1.7em; animation-duration: 5.5s; }
+    .heart:nth-child(3) { left: 50%; font-size: 2.2em; animation-duration: 7.5s; }
+    .heart:nth-child(4) { left: 65%; font-size: 1.9em; animation-duration: 8s; }
+    .heart:nth-child(5) { left: 80%; font-size: 1.8em; animation-duration: 6.5s; }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-100vh); opacity: 0; }
+    }
+
+    /* Mobile Responsiveness */
+    @media only screen and (max-width: 414px) { /* iPhone XR width */
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1.2em;
+        padding: 0 10px;
+      }
+
+      .button {
+        font-size: 1em;
+        padding: 12px 24px;
+      }
+
+      .content {
+        padding: 20px;
+        max-width: 95%;
+        box-shadow: 0 6px 15px rgba(255, 64, 129, 0.5);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="floating-hearts">
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+  </div>
+
+  <div class="content">
+    <h1>Happy Birthday, Prameela!</h1>
+    <p> Your radiant spirit<br>
+        brings light to every room,<br>
+        infusing joy and beauty into our lives.<br>
+        
+        Today, we celebrate not just your birthday,<br>
+        but the incredible person you are.<br>
+        
+        May your day overflow with laughter,<br>
+        be filled with endless love,<br>
+        and grant you dreams that come true.<br>
+        
+        Happy Birthday, Prameela!
+    </p>
+    <!-- Button linking to the Canva birthday book -->
+    <a href="https://www.canva.com/design/DAGVEUOV-tU/BAuHiVekAAUBHRDZrWiSvQ/view?utm_content=DAGVEUOV-tU&utm_campaign=designshare&utm_medium=link&utm_source=editor" class="button" target="_blank">Celebrate with Love, Happiness, Success 😊<br>---click here---</a>
+  </div>
+</body>
+</html>
